@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+body{
+  background-color: gray;
+}
+p{
+  font-family: 'Poppins';
+  text-align: justify;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+main section p.content{
+  font-weight: 10px;
+  font-size: 15px;
+}
+.title{
+  font-family: Arial;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+header img{
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+nav{
+  text-align: right;
+  margin-top: 10px;
+  margin-right: 25px;
+}
+header nav ul{
+  margin: 0;
+  padding: 0;
+}
+  
+header nav ul li{
+  font-family: 'Poppins', Arial;
+  font-size: 20px;
+  list-style: none;
+  display: inline-block;
+  padding-left: 40px;
+  cursor: pointer;
+  color: white;
+}
+header nav ul li a{
+  text-decoration: none;
+  color: white;
+}
+li:hover{
+  color: black;
+  opacity: 0.50;
+  transition: font-size 0.50s;
+}
+main section{
+  border: none;
+  border-color: black;
+  border-radius: 10px;
+  margin-top: 15px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+.crew{
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+.profile{
+  width: 200px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 60px;
+  margin-right: 15px;
+  margin-left: 50px;
+}
+.profile-pic{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 2px solid #ff3d0036;
+  border-radius: 13px;
+  box-shadow: 4px 7px 7px 0px #00000042;
+  transition: 400ms;
+  cursor: pointer;
+}
+.profile-pic:hover{
+ filter: grayscale(1);
+ transform: scale(1.03);
+}
+section p.name{
+  text-align: center;
+}
+button{
+  width: 140px;
+  padding: 10px 15px 10px 15px;
+  margin-left: 20px;
+  font-size: 15px;
+  font-family: 'Poppins';
+  border-radius: 11px;
+  cursor: pointer;
+  border: none;
+  margin-bottom: 15px;
+  transition: 400ms, color 0.15s;
+}
+button:hover{
+  transform: scale(1.03);
+  background-color: red;
+  border: solid;
+  border-color: white;
+  color: white;
+}
+footer p {
+  text-align: center;
+  font-size: 15px;
+}
+.music audio{
+  width: 200px;
+}

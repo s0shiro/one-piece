@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="strawhat/icon.png" type="image/x-icon">
+    <title>One Piece</title>
+  </head>
+  <body>
+    <header>
+      <img src="photo/h6.jpg"/>
+      <nav>
+        <ul>
+          <li><a href="#Home">Story</a></li>
+          <li><a href="#crews">StrawHats</a></li>
+          <li>Devil Fruits</li>
+          <li>Arcs</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="Home">
+        <p class="title">One Piece</p>
+        <p class="content">One Piece is a popular Japanese manga (comic) and anime (animated series) created by Eiichiro Oda. It has been serialized since 1997 and has gained a massive fan following worldwide. The story follows a young pirate named Monkey D. Luffy as he sets out on a quest to find the ultimate treasure known as One Piece and become the Pirate King.</p>
+
+        <p class="content">The story begins with Luffy, a young boy who has eaten a mysterious fruit called the Gum-Gum Fruit, gaining the ability to stretch his body like rubber but losing the ability to swim. Inspired by his idol, the pirate Gol D. Roger, Luffy decides to form his own crew and set sail to find the One Piece and fulfill his dream of becoming the Pirate King.</p>
+          
+        <p class="content">Along his journey, Luffy encounters a diverse cast of characters, including his crewmates: Roronoa Zoro, a master swordsman; Nami, a skilled navigator and thief; Usopp, a sharpshooter and storyteller; Sanji, a master chef and fighter; Tony Tony Chopper, a cute reindeer with medical abilities; Nico Robin, an archaeologist with mysterious powers; Franky, a cyborg shipwright; Brook, a skeleton musician; and Jinbe, a fish-man helmsman.</p>
+          
+        <p class="content">Luffy and his crew face numerous challenges and foes, including powerful pirate crews, the Navy, and the Shichibukai, a group of powerful pirates who have allied with the World Government. They also explore various islands, encounter unique cultures, and uncover the history and secrets of the world, all while searching for clues about the whereabouts of the elusive One Piece.</p>
+          
+        <p class="content">As the story progresses, Luffy and his crew face increasingly powerful adversaries, engage in epic battles, and navigate complex alliances and rivalries. They also uncover the truth about the Void Century, a lost period of history that holds the key to the mystery of One Piece and the world's greatest treasure.</p>
+          
+        <p class="content">One Piece is known for its compelling storytelling, rich world-building, diverse characters, and themes of friendship, adventure, and pursuing one's dreams. It has become one of the longest-running and most successful manga and anime series, captivating audiences with its engaging plot, memorable characters, and thrilling action.</p>
+          <a href="https://www.bilibili.tv/en/search-result?q=one%20piece">
+          <button>Watch Now</button>
+          </a>
+      </section>
+      <section id="crews">
+        <p class="crew">StrawHats</p>
+          <div class="profile"> 
+            <img class="profile-pic" src="strawhat/luffy.jpeg" title="Click Me to Play and Pause">
+            <p class="name">Monkey D. Luffy</p>
+              <audio class="audio" volume="0.5">
+                <source src="sounds/baka.mp3" type="audio/mpeg">
+              </audio>
+          </div>      
+
+          <div class="profile"> 
+              <img class="profile-pic" src="strawhat/zoro.png" title="Click Me to Play and Pause">
+              <p class="name">Roronoa Zoro</p>
+              <audio class="audio" volume="0.5">
+                <source src="sounds/zoro.mp3" type="audio/mpeg">
+              </audio>
+          </div>
+
+          <div class="profile"> 
+            <img class="profile-pic" src="strawhat/sanji.jpg" title="Click Me to Play and Pause">
+              <p class="name">Vin Smoke Sanji</p>
+              <audio class="audio" volume="0.5">
+                <source src="sounds/sanji.mp3" type="audio/mpeg">
+              </audio>
+          </div>
+
+          <div class="profile"> 
+            <img class="profile-pic" src="strawhat/nami.jpg">
+              <p class="name">"Cat Burglar" Nami</p>
+          </div>
+
+          <div class="profile"> 
+            <img class="profile-pic" src="strawhat/robin.jpg">
+              <p class="name">Nico Robin</p>
+          </div>
+
+          <div class="profile"> 
+            <img class="profile-pic" src="strawhat/tony.jpg">
+              <p class="name">Tony Tony Chopper</p>
+          </div>
+
+          <div class="profile"> 
+            <img class="profile-pic" src="strawhat/franky.jpg">
+              <p class="name">Cyborg Franky</p>
+          </div>
+
+          <div class="profile"> 
+            <img class="profile-pic" src="strawhat/ussop.jpg">
+              <p class="name">God Usopp</p>
+          </div>
+
+          <div class="profile"> 
+          </div>
+
+          <div class="profile"> 
+            <img class="profile-pic" src="strawhat/brook.jpg">
+              <p class="name">Brook</p>
+          </div>
+
+          <div class="profile"> 
+            <img class="profile-pic" src="strawhat/jinbie.jpg">
+              <p class="name">Jinbie</p>
+          </div>
+
+          <script>
+            var profileImages = document.getElementsByClassName('profile-pic');
+            
+            for (var i = 0; i < profileImages.length; i++) {
+              profileImages[i].addEventListener('click', function() {
+                var audioElement = this.parentElement.querySelector('.audio');
+                if (audioElement.paused) {
+                  audioElement.play();
+                } else {
+                  audioElement.pause();
+                }
+              });
+            }
+          </script>
+      </section>
+    </main>
+    <footer>
+      <p>&copy;Nielven Mascarinas 2023</p>
+    </footer>
+  </body>
+</html>
